@@ -1,0 +1,20 @@
+secret_number = 4
+
+guess = int(input('Enter a number between 1 and 10 :'))
+print(guess)
+
+if guess == secret_number:
+	print("Congratulations! You guessed the number correctly!")
+if guess > secret_number:
+	print("Too high! Try again")
+if guess < secret_number:
+	print("Too low! Try again")
+
+while(secret_number != guess):
+	guess = int(input('Enter a number between 1 and 10 :'))
+	if guess == secret_number:
+		print("Congratulations! You guessed the number correctly!")
+	if guess > secret_number:
+		print("Too high! Try again")
+	if guess < secret_number:
+		print("Too low! Try again")
