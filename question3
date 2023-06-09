@@ -1,0 +1,16 @@
+L = int(input('Enter minimum dimenson of photo'))
+N = int(input('Enter number of photos'))
+
+attempt = 0
+while (attempt<N):
+    W = int(input('Enter width of photo'))
+    H = int(input('Enter height of photo'))
+    if((W<L) or (H<L)):
+        print('UPLOAD ANOTHER')
+    else:
+        if (W==H):
+            print('ACCEPTED')
+            break
+        else:
+            print('CROP IT')
+    attempt = attempt + 1
